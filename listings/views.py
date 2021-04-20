@@ -126,4 +126,4 @@ def send_email(enquiry):
         .replace('{phone}', enquiry.phone) \
         .replace('{email}', enquiry.email) \
         .replace('{query}', enquiry.message)
-    send_mail(subject, body, from_address, (realtor_address,), fail_silently=False)
+    send_mail(subject, body, from_address, (realtor_address,), fail_silently=True)
