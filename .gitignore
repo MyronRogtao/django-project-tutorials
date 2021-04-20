@@ -158,4 +158,4 @@ Thumbs.db
 .idea
 
 # Static Folder after collection step
-static
+/static
