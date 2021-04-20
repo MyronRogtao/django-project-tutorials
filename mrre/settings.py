@@ -152,3 +152,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = '1025'
 EMAIL_SUBJECT_PREFIX = '[MRRE] '
+
+
+# Check for production settings file (local_settings) and override the default local settings if available
+try:
+    from .local_settings import *
+except ImportError:
+    pass
